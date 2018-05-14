@@ -4,6 +4,7 @@
     <h2>Essential Links</h2>
     <ul>
       <li><router-link :to="{path: '/login'}">登录</router-link></li>
+      <li><router-link :to="{path: '/home'}">Home</router-link></li>
       <li><a href="https://forum.vuejs.org" target="_blank">Forum</a></li>
       <li><a href="https://chat.vuejs.org" target="_blank">Community Chat</a></li>
       <li><a href="https://twitter.com/vuejs" target="_blank">Twitter</a></li>

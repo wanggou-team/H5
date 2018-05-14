@@ -5,7 +5,7 @@
     <div>
       <group class="group">
         <x-input class="input"  placeholder="输入手机号码">
-          <div slot="label" class="icon"></div>
+          <div slot="label" class="icon"></div> 
         </x-input>
       </group>
       <group class="group">
