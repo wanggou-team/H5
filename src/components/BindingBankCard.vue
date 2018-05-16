@@ -80,7 +80,7 @@ import {Group, Cell,XInput,CheckIcon,XButton} from 'vux'
   background: #f5f5f5;
 }
 .bgWrite{
-  bacakground: #ffffff;
+  background: #ffffff;
 }
 .bgGray{
   background: #eae9e9;
