@@ -40,9 +40,9 @@
       placeholder="请填写本人银行卡号"
       v-model="myCard"></x-input>     
     </group>
-    <div>
+    <div class="padLeft">
       <check-icon class="checkFont" type="plain" :value.sync="checkAc"></check-icon>
-      <span>我同意<a href="">《交易协议》</a></span>      
+      <span>我同意<router-link to="/" class="defaultColor">《交易协议》</router-link></span>      
     </div>
     <x-button type="warn" class="commitBtn">确认并提交</x-button>
  </div>
@@ -101,6 +101,12 @@ import {Group, Cell,XInput,CheckIcon,XButton} from 'vux'
   width:90%;
   margin: 2.27rem auto 0;
   font-size: .48rem
+}
+.padLeft{
+  padding:.13rem .2rem
+}
+.defaultColor{
+  color:#6f81e5
 }
 </style>
 <style>

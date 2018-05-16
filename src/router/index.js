@@ -8,6 +8,7 @@ import Home from '@/components/Home';
 import Bankcard from '@/components/BindingBankCard';
 import History from '@/components/History';
 import About from '@/components/about';
+import PersonalBank from '@/components/PersonalBank';
 
 Vue.use(Router);
 
@@ -52,6 +53,11 @@ export default new Router({
       path: '/about',
       name: 'about',
       component: About
+    },
+    {
+      path: '/personalbank',
+      name: 'personalbank',
+      component: PersonalBank
     }
   ],
 });
