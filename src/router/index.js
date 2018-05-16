@@ -4,6 +4,10 @@ import HelloWorld from '@/components/HelloWorld';
 import Login from '@/components/Login';
 import My from '@/components/My';
 import Flower from '@/components/Flower';
+import Home from '@/components/Home';
+import Bankcard from '@/components/BindingBankCard';
+import History from '@/components/History';
+import About from '@/components/about';
 
 Vue.use(Router);
 
@@ -29,5 +33,25 @@ export default new Router({
       name: 'flower',
       component: Flower,
     },
+    {
+      path: '/home',
+      name: 'home',
+      component: Home,
+    },
+    {
+      path: '/bankcard',
+      name: 'bankcard',
+      component: Bankcard,
+    },
+    {
+      path: '/history',
+      name: 'history',
+      component: History
+    },
+    {
+      path: '/about',
+      name: 'about',
+      component: About
+    }
   ],
 });

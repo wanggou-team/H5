@@ -6,6 +6,8 @@
       <li><router-link :to="{path: '/login'}">登录</router-link></li>
       <li><router-link :to="{path: '/My'}">我的</router-link></li>
       <li><router-link :to="{path: '/Flower'}">花卷回收</router-link></li>
+      <li><router-link :to="{path: '/home'}">Home</router-link></li>
+      <li><router-link :to="{path: '/bankcard'}">bankcard</router-link></li>
       <li><a href="https://forum.vuejs.org" target="_blank">Forum</a></li>
       <li><a href="https://chat.vuejs.org" target="_blank">Community Chat</a></li>
       <li><a href="https://twitter.com/vuejs" target="_blank">Twitter</a></li>
