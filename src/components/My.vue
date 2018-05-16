@@ -92,53 +92,53 @@ export default {
     overflow: hidden;
   }
 .wrapBg{
-  min-height:250px;
-  padding-top: 16px;
+  min-height:3.33rem;
+  padding-top: .21rem;
   background: #ef4f51;
   position: relative;
 }
 .flex-info{
   text-align: center;
   color:#ffffff;
-  font-size: 30px;
+  font-size: .4rem;
 }
 .cirle{
   position: absolute;
   box-sizing: border-box;
   left:0;
   right:0;
-  bottom:-70px;
+  bottom:-.93rem;
   margin:auto;
-  width:180px;
-  height:180px;
-  padding:10px;
+  width:2.4rem;
+  height:2.4rem;
+  padding:.13rem;
   background: #ffffff;
   z-index: 2;
 }
 .testRed{
-  background: red; width:160px; height:160px;border-radius: 100%;
+  background: red; width:2.13rem; height:2.13rem;border-radius: 100%;
 }
 .list{
-  margin-top:140px;
+  margin-top:1.87rem;
 }
 .footerBg{
   position: absolute;
-  bottom:-41px;
+  bottom:-.55rem;
   width:100%;
-  height:42px;
+  height:.56rem;
 }
 .iconImg{
-  width:30px;
-  height:36px;
-  margin-left: 44px;
+  width:.4rem;
+  height:.48rem;
+  margin-left: .59rem;
 }
 .ftLeft{
-  margin-left: 18px;
+  margin-left: .24rem;
 }
 </style>
 <style>
   .bgGray .weui-cells{
-    margin:0 0 12px 0;
+    margin:0 0 .16rem 0;
   }
   .bgGray .weui-tabbar__item.weui-bar__item_on .weui-tabbar__label{
     color:#ef4f51

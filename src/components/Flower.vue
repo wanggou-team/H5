@@ -30,7 +30,7 @@
     </group>
 
     <group>
-      <x-input required type="tel" placeholder="">
+      <x-input  type="tel" placeholder="" :show-clear="false">
         <span slot="label"  class="card">卡序列号<span class="iconX">*</span></span>
       </x-input>
     </group>
@@ -97,15 +97,15 @@
 }
 .title{
   width:100%;
-  height:90px;
+  height:1.2rem;
   text-align: center;
-  line-height: 90px;
-  font-size: 30px;
+  line-height: 1.2rem;
+  font-size: .4rem;
   color:#ef4f51;
   font-weight: bold;
   background: url("../assets/flower01.png") no-repeat;
   background-size: contain;
-  margin:30px 0px;
+  margin:.4rem 0px;
 }
 .iconX{
   color:#ff5757;
@@ -113,18 +113,18 @@
   top:0
 }
 .card{
-  padding:0 10px;
+  padding:0 .13rem;
 }
 .noCardWrap{
   width:100%;
-  height:240px;
+  height:3.2rem;
   background: #ffffff;
-  border-radius: 20px;
-  box-shadow: 0 3px 1px 2px rgba(0,0,0,.06);
-  margin-top:20px;
+  border-radius: .27rem;
+  box-shadow: 0 .04rem .01rem .03rem rgba(0,0,0,.06);
+  margin-top:.27rem;
 }
 .nocardInfo{
-  height:156px;
+  height:2.08rem;
   display: flex;
   justify-content:center;
   align-items: center;
@@ -132,20 +132,20 @@
 .btnCard{
   border-top:1px dotted #f5f5f5;
   width:100%;
-  height: 76px;
-  line-height: 76px;
+  height: 1.01rem;
+  line-height: 1.01rem;
   text-align: center;
   color:#ff5757;
 }
 .btn{
   color:#ffff;
   background: #ff5757;
-  border-radius: 50px;
+  border-radius: .67rem;
   text-align: center;
-  margin:70px auto;
-  width:380px;
-  height:90px;
-  font-size: 30px;
-  line-height: 90px;
+  margin:.93rem auto;
+  width:5.07rem;
+  height:1.2rem;
+  font-size: .4rem;
+  line-height: 1.2rem;
 }
 </style>
