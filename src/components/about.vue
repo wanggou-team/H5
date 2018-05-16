@@ -37,49 +37,49 @@
     text-align: center;
     color: #c8c8cb;
     min-height: 100vh;
-    padding-top: 116px;
+    padding-top: 1.55rem;
     box-sizing: border-box;
   }
   .logo img{
-    width: 174px;
-    height:174px;
-    padding-bottom: 15px;
+    width: 2.32rem;
+    height:2.32rem;
+    padding-bottom: .2rem;
   }
   .logo .desc{
-    line-height: 46px;
+    line-height: .61rem;
   }
   .contact{
-    padding-top: 140px;
+    padding-top: 1.87rem;
   }
   .contact a{
-    width: 470px;
-    padding: 18px 0;
-    margin-bottom: 18px;
+    width: 6.27rem;
+    padding: .24rem 0;
+    margin-bottom: .24rem;
     display: inline-block;
     border: 1px solid #c1c1c1;
-    border-radius: 10px;
+    border-radius: .13rem;
     color: #1a181a;
-    font-size: 24px;
-    box-shadow: 0 5px 0 rgba(50,50,50,.1);
+    font-size: .32rem;
+    box-shadow: 0 .07rem 0 rgba(50,50,50,.1);
     background-color: #fbf9fb;
   }
 
   .contact a:before{
     content: "";
     display: inline-block;
-    width: 40px;
-    height:40px;
+    width: .53rem;
+    height:.53rem;
     background-color: red;
     vertical-align: middle;
-    margin-right: 15px;
+    margin-right: .2rem;
   }
 
   .company{
     position: absolute;
     left: 0;
-    bottom: 75px;
+    bottom: 1rem;
     width: 100%;
     text-align: center;
-    font-size: 24px;
+    font-size: .32rem;
   }
 </style>

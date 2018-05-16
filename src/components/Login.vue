@@ -51,34 +51,34 @@
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
   .login{
-    padding: 179px 84px 0;
+    padding: 2.39rem 1.12rem 0;
     position: relative;
   }
   .logo{
-    width: 154px;
-    margin: 0 auto 140px;
-    height: 250px;
+    width: 2.05rem;
+    margin: 0 auto 1.87rem;
+    height: 3.33rem;
     background: url("../assets/logo.png") no-repeat;
     background-size: contain;
   }
   .icon{
-    width: 38px;
-    height:42px;
+    width: .51rem;
+    height:.56rem;
     background: pink;
   }
 
   .input{
-    height: 90px;
+    height: 1.2rem;
     color: #ef4f51;
     box-sizing: border-box;
   }
 
   .submit{
     background-color: #ef4f51;
-    height:88px;
-    margin-top: 74px;
-    border-radius: 10px;
-    font-size: 18px;
+    height:1.17rem;
+    margin-top: .99rem;
+    border-radius: .13rem;
+    font-size: .24rem;
   }
 
   .submit[disabled]{
@@ -93,14 +93,14 @@
   }
 
   .agree{
-    padding-top: 275px;
+    padding-top: 3.67rem;
     text-align: center;
     color: #000;
   }
 
   .code{
     border-left: 1px solid #adadad;
-    width: 218px;
+    width: 2.91rem;
     box-sizing: border-box;
     text-align: center;
   }
@@ -119,7 +119,7 @@
     margin-top: 0;
   }
   .login .weui-input{
-    padding-left: 54px;
+    padding-left: .72rem;
   }
 
   .login .vux-no-group-title:before{

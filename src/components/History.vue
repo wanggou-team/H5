@@ -46,20 +46,20 @@
     flex: 1;
   }
   .history{
-    padding-left: 82px;
+    padding-left: 1.09rem;
   }
   .history-list{
     border-left: 1px solid #ef4f51;
     list-style: none;
   }
   .history-list li{
-    width: 590px;
-    padding: 50px 40px 46px 36px;
+    width: 7.87rem;
+    padding: .67rem .53rem .61rem .48rem;
   }
   .history-list .time{
     color: #aaa;
-    font-size: 24px;
-    line-height: 38px;
+    font-size: .32rem;
+    line-height: .51rem;
     display: block;
     position: relative;
   }
@@ -67,28 +67,28 @@
     content: '';
     display: block;
     position: absolute;
-    width: 42px;
-    height:42px;
+    width: .56rem;
+    height:.56rem;
     background-color: red;
     top: 0;
-    left: -56px;
+    left: -.75rem;
     border-radius: 100%;
   }
   .history-list .card{
-    border-radius:10px;
-    margin-top: 16px;
+    border-radius:.13rem;
+    margin-top: .21rem;
     box-shadow: 1px 5px 5px rgba(50,50,50, .1), -1px 5px 5px rgba(50,50,50, .1);
   }
 
   .history-list .header{
-    font-size: 26px;
+    font-size: .35rem;
     color: #fff;
-    border-radius: 10px 10px 0 0;
+    border-radius: .13rem .13rem 0 0;
     background-color: #ff8f90;
-    padding: 14px 30px;
+    padding: .19rem .4rem;
   }
   .history-list .header .title{
-    width: 150px;
+    width: 2rem;
     font-weight: normal;
   }
 
@@ -98,8 +98,8 @@
 
   .history-list .main{
     background-color: #fff;
-    border-radius: 10px;
-    padding: 35px 40px;
+    border-radius: .13rem;
+    padding: .47rem .53rem;
     align-items: center;
   }
   .history-list .price{
@@ -108,14 +108,14 @@
   }
   .price-text{
     color: #ff771d;
-    font-size: 48px;
+    font-size: .64rem;
     font-weight: bold;
     vertical-align: sub;
-    padding-right: 15px;
+    padding-right: .2rem;
   }
   .desc{
     color: #666;
-    font-size: 30px;
+    font-size: .4rem;
     text-align: right;
   }
 </style>
