@@ -77,7 +77,7 @@ export default {
     font-size: .32rem
 }
 .lableStyle{
-    padding:0 .4rem
+    padding:.32rem
 }
 .bankwrap{
     width:100%;
@@ -122,7 +122,9 @@ export default {
     width:90%;
     margin:1.69rem auto 0;
 }
-
+.ftLeft{
+    font-size: .32rem
+}
 /* 有绑定 */
 .badingcards{
     width:90%;
