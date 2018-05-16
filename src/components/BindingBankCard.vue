@@ -113,6 +113,9 @@ import {Group, Cell,XInput,CheckIcon,XButton} from 'vux'
 .ftSize .weui-cells{
   font-size: .32rem;
 }
+.ftSize .weui-cell{
+  padding: .48rem .59rem;
+}
 .checkFont .weui-icon-circle, .checkFont .weui-icon-success-circle{
    font-size: .29rem; 
 }
