@@ -35,12 +35,12 @@
                     <div class="bankNumber">****  ****  ****  0928</div>
                 </div>
             </div>
-            <div class="gobing">去绑定</div>
+            <router-link to="/authentication"><div class="gobing">去绑定</div></router-link> 
         </div>
     </div>
     <div class="linediv"></div>
     <group class="gropWrap" gutter="0em">
-      <cell class="cellBtom" is-link>
+      <cell class="cellBtom" is-link link="/about">
         <span slot="title" class="ftLeft">关于我们</span>
       </cell>
     </group>

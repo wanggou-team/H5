@@ -2,7 +2,7 @@
   <div class="about">
     <figure class="logo">
       <figure>
-        <img src="../assets/logo2.png" alt="">
+        <!-- <img src="../assets/logo2.png" alt=""> -->
         <figcaption class="desc">旺购 V 4.5.1 <br/>金华晨皓信息技术有限公司</figcaption>
       </figure>
     </figure>

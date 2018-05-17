@@ -22,13 +22,13 @@
       </cell>
     </group>
     <group class="gropWrap">
-      <cell class="cellBtom" is-link>
+      <cell class="cellBtom" is-link link='/history'>
         <img slot="icon" class="iconImg" src="../assets/my02.png">
         <span slot="title" class="ftLeft">历史订单</span>
       </cell>
     </group>
     <group class="gropWrap">
-      <cell class="cellBtom" is-link>
+      <cell class="cellBtom" is-link link='/flower'>
         <img slot="icon" class="iconImg" src="../assets/my03.png">
         <span slot="title" class="ftLeft">花券传送门</span>
       </cell>
@@ -40,23 +40,14 @@
       </cell>
     </group>
   </div>
-  <tabbar @on-index-change="tabarChange">
-    <tabbar-item>
-      <img slot="icon" src="../assets/home-default.png">
-
-      <span slot="label">首页</span>
-    </tabbar-item>
-    <tabbar-item selected>
-      <img slot="icon" src="../assets/my-default.png">
-      <img slot="icon-active" src="../assets/my.png" alt="">
-      <span slot="label">我的</span>
-    </tabbar-item>
-  </tabbar>
+  <div class="plcaeholderDiv"></div>
+  <footerBar active="my"></footerBar>
 </div>
 </template>
 
 <script>
   import { Flexbox, FlexboxItem, CellBox, Cell,Group,Tabbar, TabbarItem  } from 'vux'
+  import footerBar from './TabbarFooter'
 export default {
   name: 'my',
   data() {
@@ -76,12 +67,16 @@ export default {
     Cell,
     Group,
     Tabbar,
-    TabbarItem
+    TabbarItem,
+    footerBar
   }
 }
 </script>
 
 <style scoped>
+.plcaeholderDiv{
+  height:53px;
+}
 .bgGray{
     position: absolute;
     background: #f5f5f5;
@@ -139,8 +134,5 @@ export default {
 <style>
   .bgGray .weui-cells{
     margin:0 0 .16rem 0;
-  }
-  .bgGray .weui-tabbar__item.weui-bar__item_on .weui-tabbar__label{
-    color:#ef4f51
   }
 </style>

@@ -18,7 +18,7 @@
         </x-input>
       </group>
 
-      <x-button disabled class="submit" @click.native="style = 'color:red;'" type="primary">登录</x-button>
+      <x-button link='/personalbank'  class="submit" @click.native="style = 'color:red;'" type="primary">登录</x-button>
     </div>
 
     <footer class="agree">

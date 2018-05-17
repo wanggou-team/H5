@@ -5,12 +5,14 @@
       label-width="3.79rem" 
       title="姓名"  
       :show-clear="false" 
+      disabled
       placeholder="请输入姓名"
       v-model="name"></x-input>
       <x-input 
       class='bgGray' 
       label-width="3.79rem" 
       title="身份证号" 
+      disabled
       :show-clear="false" 
       placeholder="请输入身份证号"
       v-model="idCode"></x-input>
@@ -44,7 +46,7 @@
       <check-icon class="checkFont" type="plain" :value.sync="checkAc"></check-icon>
       <span>我同意<router-link to="/" class="defaultColor">《交易协议》</router-link></span>      
     </div>
-    <x-button type="warn" class="commitBtn">确认并提交</x-button>
+    <x-button type="warn" class="commitBtn" link="/home">确认并提交</x-button>
  </div>
 </template>
 
@@ -90,12 +92,10 @@ import {Group, Cell,XInput,CheckIcon,XButton} from 'vux'
 }
  .redBt{
    color:#ef4f51;
-   border-left: 1px solid #eae9e9
- }
- .redBt{
-   width:1.87rem;
+   border-left: 1px solid #eae9e9;
+   width:100%;
    text-align: center;
-   padding-left: .13rem
+   padding-left: .33rem
  }
 .commitBtn{
   width:90%;

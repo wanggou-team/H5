@@ -37,7 +37,7 @@
 
     <div class="noCardWrap">
       <div class="nocardInfo">未绑定银行卡</div>
-      <div class="btnCard">去绑定</div>
+      <router-link to='/personalbank'><div class="btnCard">去绑定</div></router-link> 
     </div>
     <div class="btn">提交</div>
 

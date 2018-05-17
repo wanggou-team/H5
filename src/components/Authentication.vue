@@ -29,7 +29,7 @@
         <check-icon class="auten" type="plain" :value.sync="checkAc"></check-icon>
         <span class="tipInfo">请确保您的礼品卡所属信息为本人，我已阅读并接受<router-link to="/" class="defaultColor">《活动协议》</router-link></span>      
       </div>
-      <x-button type="warn" class="AutenBtn">立即申请</x-button>
+      <x-button type="warn" class="AutenBtn" link="/bankcard">立即申请</x-button>
   </div>
 </template>
 
