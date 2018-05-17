@@ -81,12 +81,11 @@ import footerBar from './TabbarFooter'
             return {}
         },
         created () {
-
         },
         mounted () {
         },
-
-        methods: {},
+        methods: {
+        },
         components: {
             Flexbox,
             FlexboxItem,
