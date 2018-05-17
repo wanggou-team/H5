@@ -112,8 +112,6 @@ li{
 .maxWin{
     width:100%;    
 }
-.bgheader{
-}
 .headerIcon{
     width:.64rem;
     height:.56rem;
@@ -162,7 +160,6 @@ li{
     font-size:.32rem;
 }
 .align-middle{
-    /* height: .35rem; */
     line-height: normal;
     padding:.08rem 0;
 }
@@ -198,13 +195,9 @@ li{
     background: url('../assets/home05.png') no-repeat;
     background-size: 100%;
     display:inline-block;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
     text-align:center;
     color:#ffffff;
     vertical-align: middle;
-    
 }
 .bud-info{
     vertical-align:middle;
