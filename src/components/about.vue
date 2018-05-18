@@ -2,7 +2,7 @@
   <div class="about">
     <figure class="logo">
       <figure>
-        <!-- <img src="../assets/logo2.png" alt=""> -->
+        <img src="../assets/logo2.png" alt="">
         <figcaption class="desc">旺购 V 4.5.1 <br/>金华晨皓信息技术有限公司</figcaption>
       </figure>
     </figure>
@@ -69,11 +69,18 @@
     display: inline-block;
     width: .53rem;
     height:.53rem;
-    background-color: red;
+    /* background-color: red; */
     vertical-align: middle;
     margin-right: .2rem;
   }
-
+  .phone:before{
+    background: url('../assets/icon-mobile.png') no-repeat;
+    background-size: contain;
+  }
+  .online:before{
+    background: url('../assets/icon-headSet.png') no-repeat;
+    background-size: contain;
+  }
   .company{
     position: absolute;
     left: 0;

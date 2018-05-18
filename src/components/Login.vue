@@ -4,13 +4,13 @@
 
     <div>
       <group class="group">
-        <x-input class="input"  placeholder="输入手机号码">
-          <div slot="label" class="icon"></div> 
+        <x-input class="input"  placeholder="输入手机号码" @on-focus="iptFocus(arguments,'phone')">
+          <div slot="label" class="icon" :class=" iconType == 'phone' ? 'focus-phone' : 'icon-phone' "></div> 
         </x-input>
       </group>
       <group class="group">
-        <x-input class="input"  placeholder="输入验证码">
-          <div slot="label" class="icon"></div>
+        <x-input class="input"  placeholder="输入验证码" @on-focus="iptFocus(arguments,'pass')">
+          <div slot="label" class="icon" :class=" iconType == 'pass' ? 'focus-password' : 'icon-password' "></div>
           <div slot="right" class="code">
             <!--<span class="warning">（50）秒后再获取</span>-->
             <span class="muted">获取验证码</span>
@@ -43,8 +43,14 @@
       return {
         agree: true,
         msg: 'Welcome to Your Vue.js App',
+        iconType: ''
       };
     },
+    methods: {
+      iptFocus(argum,txt) {
+        this.iconType = txt
+      }
+    }
   };
 </script>
 
@@ -64,13 +70,29 @@
   .icon{
     width: .51rem;
     height:.56rem;
-    background: pink;
+    /* background: pink; */
   }
-
+  .icon-phone{
+    background: url('../assets/icon-phone-default.png') no-repeat;    
+    background-size: contain;
+  }
+  .focus-phone{
+    background: url('../assets/icon-phone.png') no-repeat;
+    background-size: contain;
+  }
+  .icon-password{
+    background: url('../assets/icon-password-default.png') no-repeat;
+    background-size: contain;
+  }
+  .focus-password{
+    background: url('../assets/icon-password.png') no-repeat;
+    background-size: contain;
+  }
   .input{
     height: 1.2rem;
     color: #ef4f51;
     box-sizing: border-box;
+    font-size:.32rem;
   }
 
   .submit{
@@ -78,7 +100,7 @@
     height:1.17rem;
     margin-top: .99rem;
     border-radius: .13rem;
-    font-size: .24rem;
+    font-size: .48rem;
   }
 
   .submit[disabled]{

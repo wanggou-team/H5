@@ -43,8 +43,9 @@
       v-model="myCard"></x-input>     
     </group>
     <div class="padLeft">
-      <check-icon class="checkFont" type="plain" :value.sync="checkAc"></check-icon>
-      <span>我同意<router-link to="/" class="defaultColor">《交易协议》</router-link></span>      
+      <check-icon class="checkFont" type="plain" :value.sync="checkAc">
+        <span>我同意<router-link to="/" class="defaultColor">《交易协议》</router-link></span>       
+      </check-icon>
     </div>
     <x-button type="warn" class="commitBtn" link="/home">确认并提交</x-button>
  </div>
@@ -117,7 +118,7 @@ import {Group, Cell,XInput,CheckIcon,XButton} from 'vux'
   padding: .48rem .59rem;
 }
 .checkFont .weui-icon-circle, .checkFont .weui-icon-success-circle{
-   font-size: .29rem; 
+   font-size: .4rem; 
 }
 .checkFont .weui-icon-success-circle:before{
   color:#ef4f51 !important;

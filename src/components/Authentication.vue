@@ -26,8 +26,9 @@
         </x-input>
       </group>
       <div class="padLeft">
-        <check-icon class="auten" type="plain" :value.sync="checkAc"></check-icon>
-        <span class="tipInfo">请确保您的礼品卡所属信息为本人，我已阅读并接受<router-link to="/" class="defaultColor">《活动协议》</router-link></span>      
+        <check-icon class="auten" type="plain" :value.sync="checkAc">
+            <span class="tipInfo">请确保您的礼品卡所属信息为本人，我已阅读并接受<router-link to="/" class="defaultColor">《活动协议》</router-link></span>                  
+        </check-icon>
       </div>
       <x-button type="warn" class="AutenBtn" link="/bankcard">立即申请</x-button>
   </div>
@@ -94,7 +95,7 @@ export default {
 </style>
 <style>
 .auten .weui-icon-circle, .auten .weui-icon-success-circle{
-   font-size: .29rem; 
+   font-size: .4rem; 
 }
 .auten .weui-icon-success-circle:before{
   color:#ef4f51 !important;
