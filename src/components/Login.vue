@@ -1,34 +1,36 @@
 <template>
   <div class="login">
     <h1 class="logo"></h1>
-
     <div>
       <group class="group">
-        <x-input class="input"  placeholder="输入手机号码" @on-focus="iptFocus(arguments,'phone')">
-          <div slot="label" class="icon" :class=" iconType == 'phone' ? 'focus-phone' : 'icon-phone' "></div> 
+        <x-input 
+          class="input" 
+          type="tel"  
+          placeholder="输入手机号码" 
+          is-type="china-mobile"
+          ref="phone"
+          required>
+          <div slot="label" class="icon icon-phone"></div> 
         </x-input>
       </group>
       <group class="group">
-        <x-input class="input"  placeholder="输入验证码" @on-focus="iptFocus(arguments,'pass')">
-          <div slot="label" class="icon" :class=" iconType == 'pass' ? 'focus-password' : 'icon-password' "></div>
+        <x-input class="input"  placeholder="输入验证码" ref="code" required>
+          <div slot="label" class="icon icon-password"></div>
           <div slot="right" class="code">
             <!--<span class="warning">（50）秒后再获取</span>-->
-            <span class="muted">获取验证码</span>
+            <span class="muted" @click="getCode">获取验证码</span>
           </div>
         </x-input>
       </group>
 
-      <x-button link='/personalbank'  class="submit" @click.native="style = 'color:red;'" type="primary">登录</x-button>
+      <x-button link='/personalbank'  class="submit"  @click="login" type="primary">登录</x-button>
     </div>
-
-    <footer class="agree">
-      <check-icon :value.sync="agree">我同意以下协议</check-icon>
-    </footer>
   </div>
 </template>
 
 <script>
   import { XInput, Group, XButton, Cell, CheckIcon } from 'vux';
+  import axios from 'axios'
 
   export default {
     name: 'HelloWorld',
@@ -47,9 +49,20 @@
       };
     },
     methods: {
-      iptFocus(argum,txt) {
-        this.iconType = txt
-      }
+      // 获取验证码
+      getCode () {
+        // 判断是否正确填写了手机号
+        debugger
+        this.$refs.phone.blur()
+        if (this.$refs.phone.valid) {
+          axios.post('/apis/front/code.htm').then(data => {
+            console.log(data)
+          })
+        }
+      },
+
+      // 执行登录操作
+      login(){}
     }
   };
 </script>
@@ -57,7 +70,7 @@
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
   .login{
-    padding: 2.39rem 1.12rem 0;
+    padding: 2.37rem 1.13rem 0;
     position: relative;
   }
   .logo{
@@ -68,31 +81,24 @@
     background-size: contain;
   }
   .icon{
-    width: .51rem;
-    height:.56rem;
+    width: .6rem;
+    height: .6rem;
     /* background: pink; */
   }
   .icon-phone{
     background: url('../assets/icon-phone-default.png') no-repeat;    
     background-size: contain;
   }
-  .focus-phone{
-    background: url('../assets/icon-phone.png') no-repeat;
-    background-size: contain;
-  }
+  
   .icon-password{
     background: url('../assets/icon-password-default.png') no-repeat;
     background-size: contain;
   }
-  .focus-password{
-    background: url('../assets/icon-password.png') no-repeat;
-    background-size: contain;
-  }
+ 
   .input{
     height: 1.2rem;
     color: #ef4f51;
     box-sizing: border-box;
-    font-size:.32rem;
   }
 
   .submit{
@@ -114,12 +120,6 @@
     font-size: 54px;
   }
 
-  .agree{
-    padding-top: 3.67rem;
-    text-align: center;
-    color: #000;
-  }
-
   .code{
     border-left: 1px solid #adadad;
     width: 2.91rem;
@@ -133,6 +133,7 @@
 
   .muted{
     color: #c1c1c1;
+    font-size: .32rem;
   }
 </style>
 
@@ -141,7 +142,9 @@
     margin-top: 0;
   }
   .login .weui-input{
-    padding-left: .72rem;
+    padding-left: .48rem;
+    height: .6rem;
+    line-height: .6rem
   }
 
   .login .vux-no-group-title:before{

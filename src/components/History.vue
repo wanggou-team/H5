@@ -24,6 +24,7 @@
 </template>
 
 <script type="text/ecmascript-6">
+  import axios from 'axios'
   export default {
     data () {
       return {}
@@ -32,9 +33,19 @@
 
     },
     mounted () {
+      this.getOrder(1)
     },
 
-    methods: {},
+    methods: {
+      getOrder (page) {
+        axios.post('/apis/front/loanOrder/page.htm', {
+          params: {
+            page: page,
+            pageSize: 10
+          }
+        })
+      }
+    },
   }
 </script>
 

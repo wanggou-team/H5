@@ -15,8 +15,12 @@ export default {
 body{
   font-family: "微软雅黑","Helvetica Neue",Helvetica,STHeiTi,sans-serif;
 }
+input{
+  font-size:.32rem;
+}
 ::-webkit-input-placeholder {
   color: #c1c1c1;
+  font-size: .32rem;
 }
 #app{
   min-height: 100vh;
