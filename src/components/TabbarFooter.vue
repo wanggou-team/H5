@@ -8,7 +8,7 @@
             @on-item-click="thatItem(1)">
                 <img slot="icon" src="../assets/home-default.png">
                 <img slot="icon-active" src="../assets/home-active.png" alt="">
-                <span slot="label">首页</span>
+                <span slot="label" class="title">首页</span>
             </tabbar-item>
             <tabbar-item 
             link='/my'
@@ -16,7 +16,7 @@
             @on-item-click="thatItem(2)">
                 <img slot="icon" src="../assets/my-default.png">
                 <img slot="icon-active" src="../assets/my.png" alt="">
-                <span slot="label">我的</span>
+                <span slot="label" class="title">我的</span>
             </tabbar-item>
         </tabbar>
     </div>
@@ -45,7 +45,9 @@ export default {
 
 </script>
 <style scoped>
-
+.title{
+    font-size:.32rem;
+}
 .footers{
     position: fixed;
     bottom:0;

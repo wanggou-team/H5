@@ -10,6 +10,8 @@ import History from '@/components/History';
 import About from '@/components/about';
 import PersonalBank from '@/components/PersonalBank';
 import Authentication from '@/components/Authentication';
+import Defect from '@/components/defect';
+import Wait from '@/components/Wait';
 
 Vue.use(Router);
 
@@ -64,6 +66,16 @@ export default new Router({
       path: '/authentication',
       name: 'authentication',
       component: Authentication
+    },
+    {
+      path: '/defect',
+      name: 'defect',
+      component: Defect
+    },
+    {
+      path: '/wait',
+      name: 'wait',
+      component: Wait
     }
   ],
 });

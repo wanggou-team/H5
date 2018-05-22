@@ -16,7 +16,7 @@
   </div>
   <div class="list">
     <group class="gropWrap">
-      <cell class="cellBtom" is-link>
+      <cell class="cellBtom" is-link link="/personalbank">
         <img slot="icon" class="iconImg" src="../assets/icon-name.png">
         <span slot="title" class="ftLeft">个人信息</span>
       </cell>
@@ -125,14 +125,19 @@ export default {
 .iconImg{
   width:.4rem;
   height:.48rem;
-  margin-left: .59rem;
+  vertical-align: text-top;
+  /* margin-left: .59rem; */
 }
 .ftLeft{
   margin-left: .24rem;
+  font-size: .32rem;
 }
 </style>
 <style>
   .bgGray .weui-cells{
     margin:0 0 .16rem 0;
+  }
+  .gropWrap .weui-cell{
+    padding:.35rem .6rem;
   }
 </style>

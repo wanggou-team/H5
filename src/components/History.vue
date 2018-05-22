@@ -65,25 +65,26 @@
   }
   .history-list li{
     width: 7.87rem;
+    position: relative;
     padding: .67rem .53rem .61rem .48rem;
   }
   .history-list .time{
     color: #aaa;
     font-size: .32rem;
-    line-height: .51rem;
     display: block;
-    position: relative;
+    
   }
-  .history-list .time:before{
+  .history-list li:before{
     content: '';
     display: block;
     position: absolute;
     width: .56rem;
     height:.56rem;
     background-color: red;
-    top: 0;
-    left: -.75rem;
+    top: .67rem;
+    left: 0;
     border-radius: 100%;
+    transform: translateX(-50%);
   }
   .history-list .card{
     border-radius:.13rem;
