@@ -31,18 +31,32 @@
         </check-icon>
       </div>
       <x-button type="warn" class="AutenBtn" link="/bankcard">立即申请</x-button>
+
+
+
+      <Alert v-model="show" class='statusAlert' button-text="返回" @on-show="onShow" @on-hide="onHide">
+          <div class="container">
+            <icon type="success"></icon>
+            <icon type="warn"></icon>
+             <div class="statusInfo">{{ alertInfo }}</div>
+             <div class="smallStatusInfo">{{ alertSmallInfo }}</div>
+          </div>
+      </Alert>
   </div>
 </template>
 
 <script>
-import {Group, Cell,XInput,CheckIcon,XButton} from 'vux'
+import {Group, Cell,XInput,CheckIcon,XButton,Alert,Icon} from 'vux'
 export default {
   data () {
     return {
         name:'',
         idCode:'',
         bankPhone: '',
-        checkAc: false
+        checkAc: false,
+        show:true,
+        alertInfo:"申请成功", //'申请失败'
+        alertSmallInfo:"等待放款，此过程需要20分钟" //'身份信息与购卡人不符合'
     };
   },
 
@@ -50,10 +64,18 @@ export default {
 
   mounted() {},
 
-  methods: {},
-  components: {
-      Group, Cell,XInput,CheckIcon,XButton
+  methods: {
+    onShow() {
+      
+    },
+    onHide() {
+
+    }
   },
+  components: {
+      Group, Cell,XInput,CheckIcon,XButton,Alert,Icon
+  },
+  
 }
 
 </script>
@@ -92,6 +114,18 @@ export default {
     width:90%;
     margin:1.47rem auto;
 }
+
+
+/* 弹窗 */
+.statusInfo{
+    color:#000;
+    font-size: .48rem;
+    padding: .39rem 0;
+}
+.smallStatusInfo{
+    font-size: .4rem;
+    color:#999;
+}
 </style>
 <style>
 .auten .weui-icon-circle, .auten .weui-icon-success-circle{
@@ -99,5 +133,16 @@ export default {
 }
 .auten .weui-icon-success-circle:before{
   color:#ef4f51 !important;
+}
+.container .weui-icon-success{
+    font-size:1.33rem;
+    color:#ef4f51;
+}
+.statusAlert .weui-dialog__btn_primary{
+    color:#ef4f51;
+}
+.statusAlert .weui-icon-warn{
+    font-size:1.33rem;
+    color:#ef4f51;
 }
 </style>

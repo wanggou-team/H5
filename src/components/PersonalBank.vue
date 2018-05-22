@@ -74,7 +74,8 @@ export default {
     background: #eeeeee;
 }
 .ftinitl{
-    font-size: .32rem
+    font-size: .32rem;
+    padding:.43rem .27rem;
 }
 .lableStyle{
     padding:.32rem
@@ -133,7 +134,7 @@ export default {
     border-radius: .27rem .27rem 0 0;
 }
 .bgColor{
-    background:#e25863;
+    background:#eeeeee;
 }
 .bankTitle{
     width:100%;
@@ -151,16 +152,19 @@ export default {
     font-size:.4rem;
     vertical-align:middle;
     padding-left:.13rem;
+    color:#333;
 }
 .phone{
     font-size:.32rem;
     vertical-align:middle;
     padding-left:1.61rem;
+    color:#666;
 }
 .bankNumber{
     font-size:.53rem;
     color:#ffffff;
     text-align:center;
+    color:#666;
 }
 </style>
 <style>
